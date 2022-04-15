@@ -17,6 +17,12 @@ body {
 p {
     line-height: 22px;
 }
+a {
+    color: #16dd94;
+}
+a:hover {
+    color: #1af3a4;
+}
 
 /* ------------------------
 Header
@@ -60,6 +66,13 @@ Cover
 }
 .cover__caption__copy {
     display: table-cell; vertical-align: middle; text-align: center; color: #fff;
+}
+
+.cover--single {
+    height: 50%;
+}
+.cover--single h1 {
+    font-size: 42px;
 }
 
 /* ------------------------
@@ -106,10 +119,49 @@ Banner
 }
 
 /* ------------------------
+Footer
+--------------------------*/
+.footer{
+    background: #333;
+    padding: 30px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* ------------------------
+Single
+--------------------------*/
+.single {
+    
+}
+.single__copy {
+    max-width: 800px;
+    margin: 0px auto;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 20px 30px;
+}
+.single__copy__meta {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+}
+.single__copy__title {
+    font-size: 32px;
+}
+
+/* ------------------------
 Tablet
 --------------------------*/
 @media (max-width: 998px){
-
+    /* Banner */
+    .banner__image,
+    .banner__copy {
+        width: 50%;
+        height: 50%;
+    }
 }
 
 /* ------------------------
